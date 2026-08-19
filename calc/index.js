@@ -31,4 +31,4 @@ function appendValue(buttonValue){
 
 function deleteLast(){
     inputFieldEl.value = inputFieldEl.value.slice(0, -1);
-}
+} 

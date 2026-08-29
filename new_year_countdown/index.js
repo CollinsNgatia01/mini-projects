@@ -1,1 +1,16 @@
-const dayEl = document.getElementById
+const dayEl = document.getElementById ("day")
+const hourEl = document.getElementById("hour")
+const minuteEl = document.getElementById("minute")
+const secondEl = document.getElementById("second")
+
+const newYearTime = new Date("Jan 1, 2027 00:00:00").getTime()
+
+function updateCountDown(){
+    const now = new Date().getTime();
+    const gap = newYearTime - now 
+
+    const d = Math.floor(gap / day);
+    const h = Math.floor((gap % day) / hour);
+    const m = Math.floor((gap % hour) / minute);
+    const s = Math.floor((gap % minute)/ second);
+}
